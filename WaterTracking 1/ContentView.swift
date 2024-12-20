@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("Water Tracker 💦")
+            Text("Water Tracker 😺 ")
                 .font(.largeTitle) // Corrected from .largeTittle to .largeTitle
                 .fontWeight(.bold)
 
@@ -24,7 +24,6 @@ struct ContentView: View {
                 }
             }
             .padding()
-
             HStack {
                 Text("Cups to drink per day: \(cupsToDrink)") // Display the selected value
                 Stepper(value: $cupsToDrink, in: 1...10) { // Fixed the syntax for Stepper
